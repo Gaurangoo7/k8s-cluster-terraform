@@ -1,7 +1,5 @@
 # Terraform to Bulding Kubernetes Cluster using EC2 instances
-[![LinkedIn][linkedin-shield]][linkedin-url]
-[![Twitter][twitter-shield]][twittwe-url]
-[![Twitter][github-shield]][github-url]
+
 
 I build this project to create my own lab for [Kuberntes](https://kubernetes.io/) cluster on AWS cloud using EC2 instances. I found [Terraform](https://www.terraform.io) is best tool to create my K8S lab fastly with one command 🚀.
 <p align="center">
@@ -12,7 +10,7 @@ I build this project to create my own lab for [Kuberntes](https://kubernetes.io/
 ## Terraform Resources Used
 - EC2
   - One Master Node
-  - Two Worker Node (can be increased)
+  - One Worker Node (can be increased)
 - VPC
   - Public Subnet
   - Internet Gateway
@@ -50,8 +48,8 @@ To solve this problem I use <b>s3 bucket</b>. First I extract the join command a
 ## Running the Script
 After doing the requirements, you are ready now, start clone the repo to your machine:
 ``` shell
-git clone https://github.com/Ahmad-Faqehi/Terraform-Bulding-K8S.git
-cd Terraform-Bulding-K8S/
+git clone https://github.com/Gaurangoo7/k8s-cluster-terraform.git
+cd k8s-cluster-terraform
 ```
 Now execute terraform commands:
 ``` shell
@@ -80,21 +78,3 @@ To destroy the hole resources that created after applying the script, just run t
 ```shell
 terraform destroy
 ```
-
-
-<!-- CONTACT -->
-## Contact Me
-
-Ahmad Faqehi - [iAhmad.info](https://iAhmad.info) - alfaqehi775@hotmail.com
-
-Project Link: [https://github.com/Ahmad-Faqehi/Terraform-Bulding-K8S](https://github.com/Ahmad-Faqehi/Terraform-Bulding-K8S)
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/ahmad-faqehi
-[twitter-shield]: https://img.shields.io/badge/-twitter-black.svg?style=for-the-badge&logo=twitter&colorB=555
-[twittwe-url]: https://twitter.com/A_F775
-[github-shield]: https://img.shields.io/badge/-github-black.svg?style=for-the-badge&logo=github&colorB=555
-[github-url]: https://github.com/Ahmad-Faqehi
